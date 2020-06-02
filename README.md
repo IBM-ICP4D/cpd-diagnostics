@@ -16,7 +16,7 @@ In case, cloud pak for data user interface is not accessible, the system provide
 
 **Steps**
 
-Download the cli command suitable for your operating system from github
+Download the cli command (using git clone for instance) suitable for your operating system from github
 https://github.com/IBM-ICP4D/cpd-diagnostics.git
 
 1. Execute the utility to collect **health metrices** information with following option
