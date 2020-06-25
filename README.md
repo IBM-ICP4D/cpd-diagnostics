@@ -79,38 +79,4 @@ https://github.com/IBM-ICP4D/cpd-diagnostics.git
     ```
     ./cpdcli diagnostics  -d zen-cpd-zen.apps.XXX.com -u admin -p mypassword  --download OiqkKvd
     ```
-    
-    On successful execution a job is submitted in the background and  a request ID is generated.
-
-    
-3. Check the status of the job
-    The status of job can be retrieved by running passing `-j` option
-    ```
-    -a  Openshift API server URL < cpd-xyz.demo.ibmcloudpack.com:8443 >
-    -d  Cloud Pak for data URL < zen-cpd-zen.apps.XXX.com>
-    -u  Cloud Pak for data User with administrator role <admin>
-    -p  Password to authenticate the Cloud pak for data user 
-    -t  Access token from Openshift. This can be requested by logging into the Openshift console or from cli with authenticated oc command by running – oc whoami -t
-    -j  Retrieves status of all the diagnostics jobs
-    ```
-    Here is a sample command line
-    ```
-    ./cpdcli diagnostics  -d zen-cpd-zen.apps.XXX.com -u admin -p mypassword  -j
-    ```
-    
-4. Download the logs
-    Once the status of log collection finishes from the status above, the logs can be downloaded by passing the job id on the command line
-    The status of job can be retrieved by running passing `-j` option
-    ```
-    -a          Openshift API server URL < cpd-xyz.demo.ibmcloudpack.com:8443 >
-    -d          Cloud Pak for data URL < zen-cpd-zen.apps.XXX.com>
-    -u          Cloud Pak for data User with administrator role <admin>
-    -p          Password to authenticate the Cloud pak for data user 
-    -t          Access token from Openshift. This can be requested by logging into the Openshift console or from cli with authenticated oc command by running – oc whoami -t
-    -j          Retrieves status of all the diagnostics jobs
-    --download  <JOB_ID> Downloads <JOB_ID> logs
-    ```
-    Here is a sample command line
-    ```
-    ./cpdcli diagnostics  -d zen-cpd-zen.apps.XXX.com -u admin -p mypassword  --download OiqkKvd
-    ```
+     
